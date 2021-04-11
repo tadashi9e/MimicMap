@@ -1,6 +1,7 @@
 // -*- mode:c++;coding:utf-8 -*-
-#ifndef _MIMICMAP_H_
-#define _MIMICMAP_H_
+// Copyright 2021 tadashi9@gmail.com
+#ifndef MIMICMAP_H_
+#define MIMICMAP_H_
 #include <cassert>
 #include <stdexcept>
 #include <utility>
@@ -21,7 +22,7 @@ class MimicMap {
   /**
    * constructs an empty container.
    */
-  MimicMap(const allocator_type& allocator = allocator_type())
+  explicit MimicMap(const allocator_type& allocator = allocator_type())
     : elements(allocator), hasLowerLimit(false), hasHigherLimit(false) {}
   /**
    * copy constructor.
@@ -423,4 +424,4 @@ class MimicMap {
     }
   }
 };
-#endif  // _MIMICMAP_H_
+#endif  // MIMICMAP_H_

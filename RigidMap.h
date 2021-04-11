@@ -1,6 +1,7 @@
 // -*- mode:c++;coding:utf-8 -*-
-#ifndef _RIGIDMAP_H_
-#define _RIGIDMAP_H_
+// Copyright 2021 tadashi9@gmail.com
+#ifndef RIGIDMAP_H_
+#define RIGIDMAP_H_
 
 #include <cassert>
 #include <stdexcept>
@@ -20,7 +21,7 @@ class RigidMap {
   /**
    * constructs an empty container.
    */
-  RigidMap(const allocator_type& allocator = allocator_type())
+  explicit RigidMap(const allocator_type& allocator = allocator_type())
     : elements(allocator) {}
   /**
    * copy constructor.
@@ -389,4 +390,4 @@ class RigidMap {
     }
   }
 };
-#endif  // _RIGIDMAP_H_
+#endif  // RIGIDMAP_H_
