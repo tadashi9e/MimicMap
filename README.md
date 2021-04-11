@@ -72,6 +72,21 @@ MimicMap special member functions:
 |`MimicMap& setLowerLimit(const K& key)`     |set lower limit of keys  |
 |`MimicMap& setHigherLimit(const K& key)`    |set higher limit of keys |
 
+Performance comparison
+----------------------
+
+`operator[]` random access performance
+
+![`operator[]` performance](https://raw.githubusercontent.com/tadashi9e/MimicMap/main/performance_test/performance_op.png)
+
+`insert` random access performance
+
+![`insert` performance](https://raw.githubusercontent.com/tadashi9e/MimicMap/main/performance_test/performance_insert.png)
+
+`find` random access performance
+
+![`find` performance](https://raw.githubusercontent.com/tadashi9e/MimicMap/main/performance_test/performance_find.png)
+
 License
 -------
 
